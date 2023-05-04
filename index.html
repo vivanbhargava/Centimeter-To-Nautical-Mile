@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title>Centimeter To Nautical Mile</title>
+</head>
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Centimeter</label>
+            <input id="inputCenti" type="number" placeholder="Centimeter" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Nautical Mile: <span id="outputnm"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputnm").innerHTML = valNum / 185200;
+        }
+    </script>
+
+</body></html>
